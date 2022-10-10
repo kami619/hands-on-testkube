@@ -8,8 +8,8 @@ public class RemoteTestkubeTest {
 
     @Test
     void testRemoteTestKube() {
-        given().baseUri("https://kubeshop.github.io").port(443)
-                .when().get("/testkube/")
+        given().baseUri("http://keycloak.192.168.39.113.nip.io").port(443)
+                .when().get("")
                         .then().statusCode(200);
     }
 }
