@@ -8,7 +8,7 @@ public class RemoteKeycloakTest {
 
     @Test
     void testRemoteKeycloak() {
-        given().baseUri("https://keycloak.192.168.39.223.nip.io").port(443)
+        given().baseUri("http://keycloak.192.168.39.223.nip.io")
                 .when().get("")
                         .then().statusCode(200);
     }
